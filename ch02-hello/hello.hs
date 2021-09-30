@@ -4,8 +4,6 @@ doubleLess100 x = if x >= 100 then x else doubleMe x + 1
 name' = "imlgw"
 
 -- list comprehension 列表推导式
-
-[ -f "/root/.ghcup/env" ] && source "/root/.ghcup/env" # ghcup-env
 boomBang lis = [if x >= 10 then "boom" else "bang" | x <- lis]
 
 removeNonUpper str = [c | c <- str, c `elem` ['A'..'Z']]
